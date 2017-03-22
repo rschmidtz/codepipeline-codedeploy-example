@@ -1,1 +1,8 @@
 <h1>Automation for the people!</h1>
+
+<p>
+cd /var/www/html
+aws s3 cp s3://wordpress-bootstraping/ . --recursive
+chown -R apache:apache .
+systemctl restart httpd
+</p>
